@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title></title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<h1 class="heading">Hi there! welcome to mazi's django class</h1>
+<ul>
+    {% for post in posts%}
+    <li>{{ post.title }}</li>
+      <li>{{ post.body }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
